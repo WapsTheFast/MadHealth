@@ -123,6 +123,7 @@
 			children = (
 				234496112927AC54002FFB0D /* No Internet */,
 				234496322927BC48002FFB0D /* Base */,
+				233D886F29277E83001B124E /* Info.plist */,
 				234496162927ACD7002FFB0D /* Font */,
 			);
 			path = MadHealth;
@@ -204,7 +205,6 @@
 				233D886129277E7F001B124E /* AppDelegate.swift */,
 				233D886329277E7F001B124E /* SceneDelegate.swift */,
 				233D886A29277E83001B124E /* Assets.xcassets */,
-				233D886F29277E83001B124E /* Info.plist */,
 				233D886C29277E83001B124E /* LaunchScreen.storyboard */,
 			);
 			path = Base;

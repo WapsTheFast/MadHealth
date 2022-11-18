@@ -10,7 +10,7 @@ import UIKit
 class NoInternetViewController: UIViewController {
 
     @IBAction func checkInternet(_ sender: Any) {
-        if currentReachabilityStatus == .reachableViaWWAN || currentReachabilityStatus == .reachableViaWiFi{
+        if currentReachabilityStatus != .notReachable{
             closeScreen()
         }
     }
