@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		233D886229277E7F001B124E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D886129277E7F001B124E /* AppDelegate.swift */; };
 		233D886429277E7F001B124E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D886329277E7F001B124E /* SceneDelegate.swift */; };
-		233D886629277E7F001B124E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D886529277E7F001B124E /* ViewController.swift */; };
-		233D886929277E7F001B124E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233D886729277E7F001B124E /* Main.storyboard */; };
 		233D886B29277E83001B124E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233D886A29277E83001B124E /* Assets.xcassets */; };
 		233D886E29277E83001B124E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233D886C29277E83001B124E /* LaunchScreen.storyboard */; };
 		233D887929277E84001B124E /* MadHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D887829277E84001B124E /* MadHealthTests.swift */; };
 		233D888329277E84001B124E /* MadHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D888229277E84001B124E /* MadHealthUITests.swift */; };
 		233D888529277E84001B124E /* MadHealthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D888429277E84001B124E /* MadHealthUITestsLaunchTests.swift */; };
+		234496132927AC76002FFB0D /* NoInternetStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234496122927AC76002FFB0D /* NoInternetStoryboard.storyboard */; };
+		2344962F2927B153002FFB0D /* InternetCheckHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2344962E2927B153002FFB0D /* InternetCheckHelper.swift */; };
+		234496312927B6AF002FFB0D /* NoInternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234496302927B6AF002FFB0D /* NoInternetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		233D885E29277E7F001B124E /* MadHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		233D886129277E7F001B124E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		233D886329277E7F001B124E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		233D886529277E7F001B124E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		233D886829277E7F001B124E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		233D886A29277E83001B124E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		233D886D29277E83001B124E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		233D886F29277E83001B124E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,29 @@
 		233D887E29277E84001B124E /* MadHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		233D888229277E84001B124E /* MadHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadHealthUITests.swift; sourceTree = "<group>"; };
 		233D888429277E84001B124E /* MadHealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadHealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		234496122927AC76002FFB0D /* NoInternetStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoInternetStoryboard.storyboard; sourceTree = "<group>"; };
+		234496192927AD00002FFB0D /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		2344961A2927AD01002FFB0D /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		2344961B2927AD01002FFB0D /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		2344961C2927AD01002FFB0D /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		2344961D2927AD01002FFB0D /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		2344961E2927AD02002FFB0D /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		2344961F2927AD02002FFB0D /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		234496202927AD02002FFB0D /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		234496212927AD02002FFB0D /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		234496222927AD02002FFB0D /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		234496232927AD03002FFB0D /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		234496242927AD03002FFB0D /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		234496252927AD03002FFB0D /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		234496262927AD03002FFB0D /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		234496272927AD03002FFB0D /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		234496282927AD03002FFB0D /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		234496292927AD04002FFB0D /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		2344962A2927AD04002FFB0D /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		2344962B2927AD0C002FFB0D /* Raleway-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		2344962C2927AD0C002FFB0D /* Raleway-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		2344962E2927B153002FFB0D /* InternetCheckHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetCheckHelper.swift; sourceTree = "<group>"; };
+		234496302927B6AF002FFB0D /* NoInternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +121,9 @@
 		233D886029277E7F001B124E /* MadHealth */ = {
 			isa = PBXGroup;
 			children = (
-				233D886129277E7F001B124E /* AppDelegate.swift */,
-				233D886329277E7F001B124E /* SceneDelegate.swift */,
-				233D886529277E7F001B124E /* ViewController.swift */,
-				233D886729277E7F001B124E /* Main.storyboard */,
-				233D886A29277E83001B124E /* Assets.xcassets */,
-				233D886C29277E83001B124E /* LaunchScreen.storyboard */,
-				233D886F29277E83001B124E /* Info.plist */,
+				234496112927AC54002FFB0D /* No Internet */,
+				234496322927BC48002FFB0D /* Base */,
+				234496162927ACD7002FFB0D /* Font */,
 			);
 			path = MadHealth;
 			sourceTree = "<group>";
@@ -125,6 +143,71 @@
 				233D888429277E84001B124E /* MadHealthUITestsLaunchTests.swift */,
 			);
 			path = MadHealthUITests;
+			sourceTree = "<group>";
+		};
+		234496112927AC54002FFB0D /* No Internet */ = {
+			isa = PBXGroup;
+			children = (
+				2344962D2927B132002FFB0D /* Model */,
+				234496142927AC81002FFB0D /* View */,
+			);
+			path = "No Internet";
+			sourceTree = "<group>";
+		};
+		234496142927AC81002FFB0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				234496122927AC76002FFB0D /* NoInternetStoryboard.storyboard */,
+				234496302927B6AF002FFB0D /* NoInternetViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		234496162927ACD7002FFB0D /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				234496252927AD03002FFB0D /* Raleway-Black.ttf */,
+				2344961C2927AD01002FFB0D /* Raleway-BlackItalic.ttf */,
+				2344961A2927AD01002FFB0D /* Raleway-Bold.ttf */,
+				234496262927AD03002FFB0D /* Raleway-BoldItalic.ttf */,
+				234496222927AD02002FFB0D /* Raleway-ExtraBold.ttf */,
+				234496232927AD03002FFB0D /* Raleway-ExtraBoldItalic.ttf */,
+				234496292927AD04002FFB0D /* Raleway-ExtraLight.ttf */,
+				234496282927AD03002FFB0D /* Raleway-ExtraLightItalic.ttf */,
+				234496202927AD02002FFB0D /* Raleway-Italic.ttf */,
+				2344961E2927AD02002FFB0D /* Raleway-Light.ttf */,
+				234496272927AD03002FFB0D /* Raleway-LightItalic.ttf */,
+				2344962A2927AD04002FFB0D /* Raleway-Medium.ttf */,
+				234496192927AD00002FFB0D /* Raleway-MediumItalic.ttf */,
+				2344961D2927AD01002FFB0D /* Raleway-Regular.ttf */,
+				234496212927AD02002FFB0D /* Raleway-SemiBold.ttf */,
+				2344961F2927AD02002FFB0D /* Raleway-SemiBoldItalic.ttf */,
+				234496242927AD03002FFB0D /* Raleway-Thin.ttf */,
+				2344961B2927AD01002FFB0D /* Raleway-ThinItalic.ttf */,
+				2344962C2927AD0C002FFB0D /* Raleway-Italic-VariableFont_wght.ttf */,
+				2344962B2927AD0C002FFB0D /* Raleway-VariableFont_wght.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		2344962D2927B132002FFB0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2344962E2927B153002FFB0D /* InternetCheckHelper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		234496322927BC48002FFB0D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				233D886129277E7F001B124E /* AppDelegate.swift */,
+				233D886329277E7F001B124E /* SceneDelegate.swift */,
+				233D886A29277E83001B124E /* Assets.xcassets */,
+				233D886F29277E83001B124E /* Info.plist */,
+				233D886C29277E83001B124E /* LaunchScreen.storyboard */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +315,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				233D886E29277E83001B124E /* LaunchScreen.storyboard in Resources */,
+				234496132927AC76002FFB0D /* NoInternetStoryboard.storyboard in Resources */,
 				233D886B29277E83001B124E /* Assets.xcassets in Resources */,
-				233D886929277E7F001B124E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +341,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				233D886629277E7F001B124E /* ViewController.swift in Sources */,
 				233D886229277E7F001B124E /* AppDelegate.swift in Sources */,
 				233D886429277E7F001B124E /* SceneDelegate.swift in Sources */,
+				234496312927B6AF002FFB0D /* NoInternetViewController.swift in Sources */,
+				2344962F2927B153002FFB0D /* InternetCheckHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +381,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		233D886729277E7F001B124E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				233D886829277E7F001B124E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		233D886C29277E83001B124E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +518,7 @@
 				INFOPLIST_FILE = MadHealth/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +546,7 @@
 				INFOPLIST_FILE = MadHealth/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
