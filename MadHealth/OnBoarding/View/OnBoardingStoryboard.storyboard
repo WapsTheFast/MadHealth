@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--On Boarding View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="OnBoardingViewController" customModule="MadHealth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1W-Jg-I9o">
+                                <rect key="frame" x="16" y="765.5" width="382" height="30.5"/>
+                                <color key="tintColor" red="0.50980392159999999" green="0.47450980390000003" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Пропустить обучение">
+                                    <fontDescription key="titleFontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="skipOnBoarding:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zXq-Eq-cXw"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fqw-3W-kqb">
+                                <rect key="frame" x="16" y="91" width="382" height="658.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="x5x-pg-aVH">
+                                    <size key="itemSize" width="378" height="658.5"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnBoardingCollectionViewCell" id="MHL-T8-MmR" customClass="OnBoardingCollectionViewCell" customModule="MadHealth" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="378" height="658.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Vzx-nE-LIu">
+                                            <rect key="frame" x="0.0" y="0.0" width="378" height="658.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CMQ-mq-im6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="378" height="419.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgo-Dh-RMl">
+                                                    <rect key="frame" x="0.0" y="484.5" width="378" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="kl9-AN-G3I"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="32"/>
+                                                    <color key="textColor" red="0.26274509800000001" green="0.17254901959999999" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQ4-1g-qWa">
+                                                    <rect key="frame" x="0.0" y="542.5" width="378" height="116"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="116" id="uOB-yT-ti4"/>
+                                                    </constraints>
+                                                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia libero ut metus convallis tempor. Vestibulum consequat, tortor mattis consequat</string>
+                                                    <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="16"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.47450980390000003" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="CMQ-mq-im6" firstAttribute="top" secondItem="Vzx-nE-LIu" secondAttribute="top" id="EfG-yK-spc"/>
+                                                <constraint firstAttribute="trailing" secondItem="cgo-Dh-RMl" secondAttribute="trailing" id="JyV-DQ-DlQ"/>
+                                                <constraint firstItem="CMQ-mq-im6" firstAttribute="leading" secondItem="Vzx-nE-LIu" secondAttribute="leading" id="K5i-gw-7PW"/>
+                                                <constraint firstItem="cgo-Dh-RMl" firstAttribute="top" secondItem="CMQ-mq-im6" secondAttribute="bottom" constant="65" id="Kpv-Ae-FNa"/>
+                                                <constraint firstItem="QQ4-1g-qWa" firstAttribute="top" secondItem="cgo-Dh-RMl" secondAttribute="bottom" constant="16" id="MEt-tO-f9c"/>
+                                                <constraint firstItem="cgo-Dh-RMl" firstAttribute="leading" secondItem="Vzx-nE-LIu" secondAttribute="leading" id="O9h-Ia-Wi6"/>
+                                                <constraint firstAttribute="trailing" secondItem="CMQ-mq-im6" secondAttribute="trailing" id="Yz3-3I-3ED"/>
+                                                <constraint firstAttribute="bottom" secondItem="QQ4-1g-qWa" secondAttribute="bottom" id="aAg-xA-IZm"/>
+                                                <constraint firstItem="QQ4-1g-qWa" firstAttribute="leading" secondItem="Vzx-nE-LIu" secondAttribute="leading" id="kBq-cr-n4d"/>
+                                                <constraint firstAttribute="trailing" secondItem="QQ4-1g-qWa" secondAttribute="trailing" id="wgO-LV-8hX"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="378" height="658.5"/>
+                                        <connections>
+                                            <outlet property="slideImageView" destination="CMQ-mq-im6" id="WtX-zI-Lg6"/>
+                                            <outlet property="slideTextLabel" destination="QQ4-1g-qWa" id="qHB-hB-yZK"/>
+                                            <outlet property="slideTitleLabel" destination="cgo-Dh-RMl" id="Xf5-LQ-N20"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="fG9-5h-Dqr"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="a5A-W7-pzw"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="qE9-Pi-moY">
+                                <rect key="frame" x="148.5" y="484" width="117" height="26"/>
+                                <color key="pageIndicatorTintColor" red="0.87843137250000003" green="0.86666666670000003" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.26274509800000001" green="0.17254901959999999" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z1W-Jg-I9o" firstAttribute="top" secondItem="fqw-3W-kqb" secondAttribute="bottom" constant="16" id="Cs9-jl-Ccw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="z1W-Jg-I9o" secondAttribute="trailing" constant="16" id="Edr-Gx-Zx9"/>
+                            <constraint firstAttribute="bottom" secondItem="z1W-Jg-I9o" secondAttribute="bottom" constant="100" id="Fdm-lm-hbT"/>
+                            <constraint firstItem="qE9-Pi-moY" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="FwC-3P-ebs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fqw-3W-kqb" secondAttribute="trailing" constant="16" id="LRn-r4-JUr"/>
+                            <constraint firstItem="fqw-3W-kqb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="XSB-RB-ekr"/>
+                            <constraint firstItem="fqw-3W-kqb" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="91" id="a42-Ns-RXF"/>
+                            <constraint firstItem="qE9-Pi-moY" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="484" id="kws-ml-IO9"/>
+                            <constraint firstItem="z1W-Jg-I9o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="myp-9r-mdd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageCounter" destination="qE9-Pi-moY" id="SqL-rq-WE9"/>
+                        <outlet property="skipButton" destination="z1W-Jg-I9o" id="Iny-9k-uSt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="-27.455357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
