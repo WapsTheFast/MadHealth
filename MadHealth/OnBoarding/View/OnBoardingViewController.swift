@@ -39,9 +39,8 @@ class OnBoardingViewController: UIViewController {
     
     @IBAction func skipOnBoarding(_ sender: Any) {
         UserDefaultsManager.storage.setBool(value: true, data: .onBoardingIsShowed)
-        let alert = UIAlertController(title: "Skip?", message: "Are you shure?", preferredStyle: .actionSheet)
-        alert.addAction(UIAlertAction(title: "ok", style: .default))
-        self.show(alert, sender: nil)
+        self.view.window?.rootViewController? = UIStoryboard(name: "LoginViewStoryboard", bundle: nil).instantiateInitialViewController()!
+        
     }
 }
 

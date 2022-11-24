@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="MadHealth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V99-qz-tha">
+                                <rect key="frame" x="24" y="489" width="342" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="tjf-2f-seJ"/>
+                                </constraints>
+                                <color key="textColor" red="0.48084765670000001" green="0.41911116240000001" blue="0.65771037340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                <connections>
+                                    <action selector="editingTextFields:" destination="Y6W-OH-hqX" eventType="editingChanged" id="Nlg-Jw-C0Y"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5gK-3S-ye9">
+                                <rect key="frame" x="24" y="551" width="342" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Aqd-xO-e4C"/>
+                                </constraints>
+                                <color key="textColor" red="0.48084765670000001" green="0.41911116240000001" blue="0.65771037340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
+                                <connections>
+                                    <action selector="editingTextFields:" destination="Y6W-OH-hqX" eventType="editingChanged" id="RVX-Fc-5Va"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyd-qc-Cer">
+                                <rect key="frame" x="24" y="650" width="342" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="xAM-6I-PSo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Вход">
+                                    <fontDescription key="titleFontDescription" name="Raleway-Regular" family="Raleway" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.26130309699999998" green="0.1708922088" blue="0.50708276029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signInButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UwP-QA-wYL"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6Q-0Y-Za6">
+                                <rect key="frame" x="78" y="725.33333333333337" width="234" height="30.666666666666629"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ещё нет аккаунта?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vn3-8k-ojz">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="30.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                                        <color key="textColor" red="0.50773078199999999" green="0.47536337379999999" blue="0.61688357589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwg-83-Isa">
+                                        <rect key="frame" x="124.66666666666666" y="0.0" width="109.33333333333334" height="30.666666666666668"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Регистрация">
+                                            <fontDescription key="titleFontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                                            <color key="baseForegroundColor" red="0.26130309699999998" green="0.1708922088" blue="0.50708276029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вход" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBl-qs-ccx">
+                                <rect key="frame" x="24" y="72" width="342" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="TGI-iE-1uZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="32"/>
+                                <color key="textColor" red="0.26130309699999998" green="0.1708922088" blue="0.50708276029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="guy" translatesAutoresizingMaskIntoConstraints="NO" id="yEU-UG-Mnf">
+                                <rect key="frame" x="24" y="172" width="342" height="293"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yEU-UG-Mnf" secondAttribute="height" multiplier="327:280" priority="999" id="oFz-GH-BBK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Was-IM-v6y" userLabel="eye">
+                                <rect key="frame" x="323" y="566" width="22" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="3xe-IK-V4u"/>
+                                    <constraint firstAttribute="width" constant="22" id="lTB-6A-jjz"/>
+                                </constraints>
+                                <color key="tintColor" red="0.62592685219999999" green="0.58330315349999995" blue="0.75773292780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <imageReference key="image" image="eye.fill" catalog="system" symbolScale="default" renderingMode="template" variableValue="1"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchPasswordSecure" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eWl-fl-Z24"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbX-Bm-adi">
+                                <rect key="frame" x="201" y="605" width="165" height="30.666666666666629"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Вход по номеру коду">
+                                    <fontDescription key="titleFontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.26130309699999998" green="0.1708922088" blue="0.50708276029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5gK-3S-ye9" firstAttribute="trailing" secondItem="Was-IM-v6y" secondAttribute="trailing" constant="21" id="0RN-Uq-Apb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MbX-Bm-adi" secondAttribute="trailing" constant="24" id="0z5-tE-oWe"/>
+                            <constraint firstItem="5gK-3S-ye9" firstAttribute="bottom" secondItem="Was-IM-v6y" secondAttribute="bottom" constant="16" id="13T-1Z-AYP"/>
+                            <constraint firstItem="MbX-Bm-adi" firstAttribute="top" secondItem="5gK-3S-ye9" secondAttribute="bottom" constant="8" id="14C-MF-zyw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="V99-qz-tha" secondAttribute="trailing" constant="24" id="1e0-lq-xrm"/>
+                            <constraint firstItem="5gK-3S-ye9" firstAttribute="top" secondItem="V99-qz-tha" secondAttribute="bottom" constant="16" id="1uH-Ln-esH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5gK-3S-ye9" secondAttribute="trailing" constant="24" id="4Pl-3s-gNf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jyd-qc-Cer" secondAttribute="trailing" constant="24" id="5kF-45-2W3"/>
+                            <constraint firstItem="5gK-3S-ye9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="CBW-Uy-GcL"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="jyd-qc-Cer" secondAttribute="bottom" constant="118" identifier="test" id="Ds8-lv-GVJ"/>
+                            <constraint firstAttribute="bottom" secondItem="v6Q-0Y-Za6" secondAttribute="bottom" constant="88" id="G0W-1q-QXE"/>
+                            <constraint firstItem="QBl-qs-ccx" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="72" id="Hzl-bD-bLM"/>
+                            <constraint firstItem="jyd-qc-Cer" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Irn-Fe-BbN"/>
+                            <constraint firstItem="V99-qz-tha" firstAttribute="top" secondItem="yEU-UG-Mnf" secondAttribute="bottom" constant="24" id="Q0C-Mq-v2e"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yEU-UG-Mnf" secondAttribute="trailing" constant="24" id="b4A-EP-XSK"/>
+                            <constraint firstItem="v6Q-0Y-Za6" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bUh-H6-mIY"/>
+                            <constraint firstItem="Was-IM-v6y" firstAttribute="top" secondItem="5gK-3S-ye9" secondAttribute="top" constant="15" id="g67-7E-Z2i"/>
+                            <constraint firstItem="jyd-qc-Cer" firstAttribute="top" secondItem="5gK-3S-ye9" secondAttribute="bottom" constant="53" id="gaX-gU-8Qd"/>
+                            <constraint firstItem="yEU-UG-Mnf" firstAttribute="top" secondItem="QBl-qs-ccx" secondAttribute="bottom" constant="58" id="hdG-43-qFj"/>
+                            <constraint firstItem="V99-qz-tha" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="hlH-SD-TAn"/>
+                            <constraint firstItem="QBl-qs-ccx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="rCo-Cc-eWN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="QBl-qs-ccx" secondAttribute="trailing" constant="24" id="rwH-C4-Qwo"/>
+                            <constraint firstItem="yEU-UG-Mnf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="zPe-t6-C5z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="V99-qz-tha" id="Lv5-nR-MVY"/>
+                        <outlet property="passwordTextField" destination="5gK-3S-ye9" id="rV6-Qf-zAr"/>
+                        <outlet property="showPasswordButton" destination="Was-IM-v6y" id="BBj-Ad-y9c"/>
+                        <outlet property="signInButton" destination="jyd-qc-Cer" id="5Lz-iG-gbS"/>
+                        <outlet property="signInButtonBottomConstraint" destination="Ds8-lv-GVJ" id="5iP-XE-3WK"/>
+                        <outlet property="signUpButton" destination="iwg-83-Isa" id="t8f-Vf-2a8"/>
+                        <outlet property="signViaCodeButton" destination="MbX-Bm-adi" id="2dd-CH-9BB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30.769230769230766" y="-28.436018957345969"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eye.fill" catalog="system" width="128" height="80"/>
+        <image name="guy" width="220.66667175292969" height="155.33332824707031"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
